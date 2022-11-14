@@ -6,9 +6,12 @@
           content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel='preconnect' href='https://fonts.googleapis.com'>
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap">
+    <!--    <link rel="stylesheet"-->
+    <!--          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap">-->
+
+    <link rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <meta name="description"
           content="Author: Wojciech Falkowski, Category: Portfolio Website, Length: 1 page">
@@ -70,7 +73,11 @@
             <button class="nav__resume">Resume</button>
 
             <button aria-label="show menu" class="nav__toggle" id="nav-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1.5625rem" height="1.5625rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M3 3h8v8H3V3zm0 10h8v8H3v-8zM13 3h8v8h-8V3zm0 10h8v8h-8v-8zm2-8v4h4V5h-4zm0 10v4h4v-4h-4zM5 5v4h4V5H5zm0 10v4h4v-4H5z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.5625rem" height="1.5625rem"
+                     preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                          d="M3 3h8v8H3V3zm0 10h8v8H3v-8zM13 3h8v8h-8V3zm0 10h8v8h-8v-8zm2-8v4h4V5h-4zm0 10v4h4v-4h-4zM5 5v4h4V5H5zm0 10v4h4v-4H5z" />
+                </svg>
             </button>
         </div>
 
@@ -100,5 +107,12 @@
 
 <!--=============== MAIN JS ===============-->
 <script src="assets/js/main.js"></script>
+<noscript>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap"
+            rel="stylesheet"
+            type="text/css"
+    />
+</noscript>
 </body>
 </html>
