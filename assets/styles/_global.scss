@@ -66,4 +66,21 @@
 
 /*=============== END BUTTONS ===============*/
 
+/*=============== LINE ===============*/
+.--line {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+
+  &::before {
+    display: block;
+    content: '';
+    width: 3rem;
+    height: .125rem;
+    background-color: black;
+  }
+}
+
+/*=============== END LINE ===============*/
+
 /*=============== END REUSABLE CSS CLASSES ===============*/

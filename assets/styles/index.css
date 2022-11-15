@@ -220,6 +220,21 @@ input {
 }
 
 /*=============== END BUTTONS ===============*/
+/*=============== LINE ===============*/
+.--line {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.--line::before {
+  display: block;
+  content: "";
+  width: 3rem;
+  height: 0.125rem;
+  background-color: black;
+}
+
+/*=============== END LINE ===============*/
 /*=============== END REUSABLE CSS CLASSES ===============*/
 /*=============== HEADER ===============*/
 .header {
@@ -365,7 +380,7 @@ input {
 }
 
 /*=============== END NAV ===============*/
-.hero .container {
+.hero {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 1fr;
@@ -373,14 +388,11 @@ input {
   row-gap: 1.5rem;
 }
 @media screen and (min-width: 768px) {
-  .hero .container {
+  .hero {
     grid-template-columns: 1fr 1fr;
   }
 }
 .hero__greetings {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
   font-size: 1.5rem;
   line-height: 2.5rem;
   font-weight: 600;
@@ -389,12 +401,6 @@ input {
   .hero__greetings {
     grid-column: 1/2;
   }
-}
-.hero__greetings-line {
-  display: block;
-  width: 3rem;
-  height: 0.125rem;
-  background-color: black;
 }
 .hero__name {
   font-size: 2rem;
@@ -464,6 +470,38 @@ input {
   }
 }
 
+.works__project-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+.works__project {
+  flex-basis: 100%;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+}
+@media screen and (min-width: 768px) {
+  .works__project {
+    flex-basis: calc(50% - 0.5rem);
+  }
+}
+.project__title {
+  padding: 1rem;
+}
+.project__technology-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding: 0 1rem 1rem 1rem;
+}
+.project__technology-wrapper li {
+  padding: 0 0.25rem;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+}
+
 .backdrop {
   top: 0;
   left: 0;
@@ -482,10 +520,6 @@ input {
 }
 
 /*=============== HOME ===============*/
-#home {
-  min-height: 100vh;
-}
-
 /*=============== END HOME ===============*/
 /*=============== WORKS ===============*/
 #works {
@@ -493,6 +527,12 @@ input {
 }
 
 /*=============== END WORKS ===============*/
+/*=============== SKILLS ===============*/
+#skills {
+  min-height: 100vh;
+}
+
+/*=============== END SKILLS ===============*/
 /*=============== ABOUT-ME ===============*/
 #about-me {
   min-height: 100vh;

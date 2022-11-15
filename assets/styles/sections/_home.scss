@@ -1,49 +1,24 @@
 .hero {
-  .container {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr;
-    column-gap: 3.5rem;
-    row-gap: 1.5rem;
-    @media screen and (min-width: 768px) {
-      grid-template-columns: 1fr 1fr;
-
-    }
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  column-gap: 3.5rem;
+  row-gap: 1.5rem;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
   }
 
-  //&__description {
-  //  display: flex;
-  //  flex-direction: column;
-  //  justify-content: space-between;
-  //}
-
   &__greetings {
-    display: flex;
-    align-items: center;
-    gap: .75rem;
     font-size: 1.5rem;
     line-height: 2.5rem;
     font-weight: 600;
 
     @media screen and (min-width: 768px) {
       grid-column: 1/2;
-      //font-size: 2.125rem;
     }
-
-    @media screen and (min-width: 1200px) {
-      //font-size: 2.125rem;
-    }
-  }
-
-  &__greetings-line {
-    display: block;
-    width: 3rem;
-    height: .125rem;
-    background-color: black;
   }
 
   &__name {
-    //margin-top: 1.5rem;
     font-size: 2rem;
     line-height: 2.375rem;
 
@@ -57,7 +32,6 @@
       font-size: 3.5rem;
       line-height: 5.5rem;
       white-space: nowrap;
-
     }
   }
 
@@ -74,11 +48,6 @@
       font-size: 1.5rem;
       line-height: 2rem;
       grid-column: 1/2;
-    }
-
-    @media screen and (min-width: 992px) {
-      //font-size: 2.5rem;
-      //line-height: 3rem;
     }
   }
 

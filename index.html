@@ -42,6 +42,10 @@
                 </li>
 
                 <li>
+                    <a class="nav__link" href="#skills">?</a>
+                </li>
+
+                <li>
                     <a class="nav__link" href="#about-me">#about-me</a>
                 </li>
 
@@ -88,14 +92,10 @@
 
 <!-- CONTENT -->
 <main>
-    <section id="home" class="section hero">
-        <div class="container">
-            <!--            <div class="hero__description">-->
-            <!--                <div>-->
+    <section id="home" class="section container">
+        <div class="hero">
             <div class="hero__greetings">
-                <span class="hero__greetings-line"></span>
-
-                <p>#Hello</p>
+                <h2 class="--line">#Hello</h2>
             </div>
 
             <h1 class="hero__name"><span class="hero__name-prefix">
@@ -106,7 +106,6 @@
                 Creative front-end developer with over 2 years of experience in software
                 house.
             </p>
-            <!--                </div>-->
 
             <div class="hero__contacts">
                 <a href="https://www.facebook.com/wojtek.falkowski.1/"
@@ -142,19 +141,99 @@
                      alt="Picture of Wojtek Falkowski">
             </div>
         </div>
+    </section>
+
+    <section id="works" class="section container">
+        <div class="works">
+            <h2 class="--line"># projects</h2>
+
+            <div class="works__project-wrapper">
+                <!-- PROJECT TRAVEL -->
+                <div class="works__project project">
+                    <img width="100%" height="auto" src="./assets/images/avif/travel.avif"
+                         alt="Image of travel project">
+
+                    <div class="project__description">
+                        <h3 class="project__title">Travel Website.</h3>
+
+                        <ul class="project__technology-wrapper">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END PROJECT TRAVEL -->
+
+                <!-- PROJECT PORTFOLIO -->
+                <div class="works__project project">
+                    <img width="100%" height="auto" src="./assets/images/avif/portfolio.avif"
+                         alt="Image of travel project">
+
+                    <div class="project__description">
+                        <h3 class="project__title">Portfolio Website.</h3>
+
+                        <ul class="project__technology-wrapper">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END PROJECT PORTFOLIO -->
+
+                <!-- PROJECT TRIP-GUIDE -->
+                <div class="works__project project">
+                    <img width="100%" height="auto" src="./assets/images/avif/trip-guide.avif"
+                         alt="Image of travel project">
+
+                    <div class="project__description">
+                        <h3 class="project__title">Trip Guide Website.</h3>
+
+                        <ul class="project__technology-wrapper">
+                            Frontend:
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>SCSS</li>
+                            <li>Bootstrap 5</li>
+                            <li>Vue</li>
+                            <li>Nuxt</li>
+                            <li>TypeScript</li>
+                            <li>Docker</li>
+                        </ul>
+
+                        <ul class="project__technology-wrapper">
+                            Backend:
+                            <li>JavaScript</li>
+                            <li>Node</li>
+                            <li>Express</li>
+                            <li>MongoDB</li>
+                            <li>Docker</li>
+                        </ul>
+
+                        <ul class="project__technology-wrapper">
+                            Other technologies:
+                            <li>GraphCMS</li>
+                            <li>CI/CD</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END PROJECT TRIP-GUIDE -->
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section container">
+        <h2 class="--line"># skills</h2>
 
     </section>
 
-    <section id="works" class="section">
-        works
+    <section id="about-me" class="section container">
+        <h2 class="--line"># about-me</h2>
     </section>
 
-    <section id="about-me" class="section">
-        about-me
-    </section>
-
-    <section id="contacts" class="section">
-        contacts
+    <section id="contacts" class="section container">
+        <h2 class="--line"># contacts</h2>
     </section>
 </main>
 
