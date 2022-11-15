@@ -1,0 +1,146 @@
+/*=============== NAV ===============*/
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+
+    @media screen and (min-width: 768px) {
+      column-gap: 2rem;
+    }
+  }
+
+  &__resume {
+    background-color: var(--white-color);
+    border: 2px solid var(--first-color);
+    border-radius: 5px;
+    padding: .25rem .5rem;
+  }
+
+  &__logo,
+  &__toggle {
+    color: var(--white-color-alt);
+    background-color: var(--white-color);
+  }
+
+  &__logo {
+    font-weight: var(--font-semi-bold);
+    font-size: 1.5625rem;
+  }
+
+  &__toggle {
+    display: flex;
+    font-size: 1.5625rem;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    position: relative;
+
+    @media screen and (max-width: 767px) {
+      position: fixed;
+      background-color: white;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100%;
+      box-shadow: -1px 0 4px hsla(190, 64%, 15%, .15);
+      padding: 3rem;
+      transition: .4s;
+    }
+
+    & .nav__dark {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      column-gap: 4rem;
+    }
+  }
+
+  &__link, &__resume, &__logo {
+    color: var(--text-color-light);
+    font-weight: var(--font-semi-bold);
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      //color: var(--white-color);
+      text-transform: initial;
+    }
+
+    &:hover {
+      color: var(--text-color);
+
+      @media screen and (min-width: 768px) {
+        //color: var(--white-color);
+      }
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: var(--title-color);
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+/* show menu */
+.--show {
+  right: 0;
+}
+
+/* Change background header */
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0 0 4px hsla(190, 64%, 15%, .15);
+
+  & .nav__logo,
+  & .nav__toggle {
+    color: var(--title-color);
+  }
+}
+
+/* Active link */
+.active-link {
+  position: relative;
+  color: var(--title-color);
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: var(--title-color);
+    width: 100%;
+    height: 2px;
+    bottom: -.75rem;
+    left: 0;
+  }
+}
+
+/*=============== END NAV ===============*/

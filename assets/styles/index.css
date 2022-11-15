@@ -1,4 +1,3 @@
-/*=============== GOOGLE FONTS ===============*/
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3rem;
@@ -67,7 +66,6 @@ body.dark-theme {
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 
-/*========== Button Dark/Light ==========*/
 .nav__dark {
   display: flex;
   align-items: center;
@@ -99,11 +97,13 @@ body.dark-theme {
   }
 }
 
+/*========== END Variables Dark theme ==========*/
 /*=============== BASE ===============*/
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: Ubuntu, Arial, sans-serif;
 }
 
 html {
@@ -157,6 +157,7 @@ input {
   overflow-x: hidden;
 }
 
+/*=============== END BASE ===============*/
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 4.5rem 0 2.5rem;
@@ -227,7 +228,7 @@ input {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: transparent;
+  background-color: white;
 }
 
 /*=============== END HEADER ===============*/
@@ -283,7 +284,7 @@ input {
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
-    background-color: var(--body-color);
+    background-color: white;
     top: 0;
     right: -100%;
     width: 70%;
@@ -335,7 +336,7 @@ input {
 }
 
 /* show menu */
-.show-menu {
+.--show {
   right: 0;
 }
 
@@ -364,6 +365,120 @@ input {
 }
 
 /*=============== END NAV ===============*/
+.hero .container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  column-gap: 3.5rem;
+  row-gap: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .hero .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.hero__greetings {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .hero__greetings {
+    grid-column: 1/2;
+  }
+}
+.hero__greetings-line {
+  display: block;
+  width: 3rem;
+  height: 0.125rem;
+  background-color: black;
+}
+.hero__name {
+  font-size: 2rem;
+  line-height: 2.375rem;
+}
+@media screen and (min-width: 768px) {
+  .hero__name {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    grid-column: 1/2;
+  }
+}
+@media screen and (min-width: 991px) {
+  .hero__name {
+    font-size: 3.5rem;
+    line-height: 5.5rem;
+    white-space: nowrap;
+  }
+}
+.hero__name-prefix {
+  font-weight: 500;
+}
+.hero__short-description {
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .hero__short-description {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    grid-column: 1/2;
+  }
+}
+.hero__contacts {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  grid-row: 5/6;
+}
+@media screen and (min-width: 768px) {
+  .hero__contacts {
+    align-items: flex-end;
+    justify-content: unset;
+    grid-column: 1/2;
+    grid-row: unset;
+  }
+}
+.hero__profile-picture-wrapper {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .hero__profile-picture-wrapper {
+    grid-column: 2/3;
+    grid-row: 1/5;
+  }
+}
+.hero__profile-picture {
+  margin-top: 2rem;
+  max-height: 29rem;
+}
+@media screen and (min-width: 768px) {
+  .hero__profile-picture {
+    max-height: unset;
+    margin-top: unset;
+  }
+}
+
+.backdrop {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.backdrop.--show {
+  position: fixed;
+}
+.backdrop__loading-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /*=============== HOME ===============*/
 #home {
   min-height: 100vh;
@@ -389,4 +504,4 @@ input {
 
 /*=============== END CONTACTS ===============*/
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=index.css.map */

@@ -9,17 +9,17 @@
     <!--    <link rel="stylesheet"-->
     <!--          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap">-->
 
-    <link rel="preload"
-          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap"
-          as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <!--    <link rel="preload"-->
+    <!--          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap"-->
+    <!--          as="style" onload="this.onload=null;this.rel='stylesheet'">-->
 
     <meta name="description"
-          content="Author: Wojciech Falkowski, Category: Portfolio Website, Length: 1 page">
+          content="Author: Wojtek Falkowski, Category: Portfolio Website, Length: 1 page">
 
     <!--=============== STYLES ===============-->
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/index.css">
 
-    <title>Wojciech Falkowski - Portfolio</title>
+    <title>Wojtek Falkowski - Portfolio</title>
 </head>
 
 <body>
@@ -34,19 +34,19 @@
         <div id="nav-menu" class="nav__menu">
             <ul class="nav__list">
                 <li>
-                    <a class="nav__link" href="#home">home</a>
+                    <a class="nav__link" href="#home">#home</a>
                 </li>
 
                 <li>
-                    <a class="nav__link" href="#works">works</a>
+                    <a class="nav__link" href="#works">#works</a>
                 </li>
 
                 <li>
-                    <a class="nav__link" href="#about-me">about me</a>
+                    <a class="nav__link" href="#about-me">#about-me</a>
                 </li>
 
                 <li>
-                    <a class="nav__link" href="#contacts">contacts</a>
+                    <a class="nav__link" href="#contacts">#contacts</a>
                 </li>
             </ul>
 
@@ -88,8 +88,58 @@
 
 <!-- CONTENT -->
 <main>
-    <section id="home" class="section">
-        home
+    <section id="home" class="section hero">
+        <div class="container">
+            <!--            <div class="hero__description">-->
+            <!--                <div>-->
+            <div class="hero__greetings">
+                <span class="hero__greetings-line"></span>
+
+                <p>#Hello</p>
+            </div>
+
+            <h1 class="hero__name"><span class="hero__name-prefix">
+                    I'm</span> Wojtek Falkowski
+            </h1>
+
+            <p class="hero__short-description">
+                Creative front-end developer with over 2 years of experience in software
+                house.
+            </p>
+            <!--                </div>-->
+
+            <div class="hero__contacts">
+                <a href="https://www.facebook.com/wojtek.falkowski.1/">
+                    <svg width="20px" height="20px" viewBox="0 0 60.734 60.733"
+                         xml:space="preserve"
+                         xmlns="http://www.w3.org/2000/svg"><path d="M57.378,0.001H3.352C1.502,0.001,0,1.5,0,3.353v54.026c0,1.853,1.502,3.354,3.352,3.354h29.086V37.214h-7.914v-9.167h7.914   v-6.76c0-7.843,4.789-12.116,11.787-12.116c3.355,0,6.232,0.251,7.071,0.36v8.198l-4.854,0.002c-3.805,0-4.539,1.809-4.539,4.462   v5.851h9.078l-1.187,9.166h-7.892v23.52h15.475c1.852,0,3.355-1.503,3.355-3.351V3.351C60.731,1.5,59.23,0.001,57.378,0.001z" /></svg>
+
+                </a>
+
+                <a href="https://www.linkedin.com/in/wojciech-falkowski-841a951ab/">
+                    <svg width="20px" height="20px" viewBox="0 0 455 455"
+                         xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m246.4 204.35v-0.665c-0.136 0.223-0.324 0.446-0.442 0.665h0.442z" /><path
+                            d="m0 0v455h455v-455h-455zm141.52 378h-67.506v-203.1h67.506v203.1zm-33.753-230.82h-0.446c-22.645 0-37.323-15.601-37.323-35.101 0-19.928 15.107-35.087 38.211-35.087 23.109 0 37.31 15.159 37.752 35.087 0 19.5-14.643 35.101-38.194 35.101zm277.23 230.82h-67.524v-108.66c0-27.291-9.756-45.92-34.195-45.92-18.664 0-29.755 12.543-34.641 24.693-1.776 4.34-2.24 10.373-2.24 16.459v113.43h-67.537s0.905-184.04 0-203.1h67.537v28.779c8.973-13.807 24.986-33.547 60.856-33.547 44.437 0 77.744 29.02 77.744 91.398v116.46z" /></g></svg>
+                </a>
+
+                <a href="https://github.com/WojciechxFalkowski">
+                    <svg width="20px" height="20px" aria-label="GitHub" role="img"
+                         viewBox="0 0 512 512"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <rect width="512" height="512" rx="15%" fill="#1B1817" />
+                        <path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"
+                              fill="#fff" />
+                    </svg>
+                </a>
+            </div>
+            <!--            </div>-->
+
+            <div class="hero__profile-picture-wrapper">
+                <img class="hero__profile-picture" src="./assets/images/jpeg/profile_picture.jpeg"
+                     alt="Picture of Wojtek Falkowski">
+            </div>
+        </div>
+
     </section>
 
     <section id="works" class="section">
@@ -105,8 +155,12 @@
     </section>
 </main>
 
+<div id="backdrop" class="backdrop">
+    <!--    <LoadingIcon class="backdrop__loading-icon icon &#45;&#45;loading" />-->
+</div>
+
 <!--=============== MAIN JS ===============-->
-<script src="assets/js/main.js"></script>
+<script src="assets/js/navigation.js"></script>
 <noscript>
     <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap"

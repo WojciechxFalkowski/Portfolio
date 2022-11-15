@@ -1,0 +1,38 @@
+// npx node-sass -o css sass/style.styles
+// npx parcel index.html
+
+@import "./_variables.scss";
+@import "./reboot.scss";
+@import "./global.scss";
+
+@import "./sections";
+@import "./components";
+
+
+/*=============== HOME ===============*/
+#home {
+  min-height: 100vh;
+}
+
+/*=============== END HOME ===============*/
+
+/*=============== WORKS ===============*/
+#works {
+  min-height: 100vh;
+}
+
+/*=============== END WORKS ===============*/
+
+/*=============== ABOUT-ME ===============*/
+#about-me {
+  min-height: 100vh;
+}
+
+/*=============== END ABOUT-ME ===============*/
+
+/*=============== CONTACTS ===============*/
+#contacts {
+  min-height: 100vh;
+}
+
+/*=============== END CONTACTS ===============*/

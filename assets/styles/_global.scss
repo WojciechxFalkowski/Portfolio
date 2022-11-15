@@ -1,0 +1,69 @@
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+  padding: 4.5rem 0 2.5rem;
+
+  @media screen and (min-width: 768px) {
+    padding: 7rem 0 2rem;
+  }
+
+  &__title {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: var(--mb-2);
+  }
+}
+
+.container {
+  max-width: 968px;
+  margin-left: var(--mb-1);
+  margin-right: var(--mb-1);
+
+  @media screen and (min-width: 1024px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1024px;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/*=============== BUTTONS ===============*/
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  padding: 1rem 2rem;
+  font-weight: var(--font-semi-bold);
+  transition: .3s;
+
+  &:hover {
+    //background-color: var(--first-color-alt);
+  }
+
+  &--flex {
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+  }
+
+  &--link {
+    background: none;
+    padding: 0;
+
+    &:hover {
+      background: none;
+    }
+  }
+}
+
+/*=============== END BUTTONS ===============*/
+
+/*=============== END REUSABLE CSS CLASSES ===============*/
