@@ -42,7 +42,7 @@
                 </li>
 
                 <li>
-                    <a class="nav__link" href="#skills">?</a>
+                    <a class="nav__link" href="#career">#career</a>
                 </li>
 
                 <li>
@@ -137,7 +137,7 @@
             <!--            </div>-->
 
             <div class="hero__profile-picture-wrapper">
-                <img class="hero__profile-picture" src="./assets/images/avif/profile_picture.avif"
+                <img class="hero__profile-picture" src="./assets/images/avif/profile_picture_w500.avif"
                      alt="Picture of Wojtek Falkowski">
             </div>
         </div>
@@ -150,8 +150,17 @@
             <div class="works__project-wrapper">
                 <!-- PROJECT TRAVEL -->
                 <div class="works__project project">
-                    <img width="100%" height="auto" src="./assets/images/avif/travel.avif"
-                         alt="Image of travel project">
+                    <!--                    <img width="100%" height="auto" src="./assets/images/avif/travel.avif"-->
+                    <!--                         alt="Image of travel project">-->
+                    <picture>
+                        <source media="(max-width: 576px)"
+                                srcset="./assets/images/avif/travel_w356.avif" />
+                        <source media="(max-width: 768px)"
+                                srcset="./assets/images/avif/travel_w1000.avif" />
+                        <img class="project__image" src="./assets/images/avif/travel_w500.avif"
+                             alt="Image of travel project" />
+                    </picture>
+
 
                     <div class="project__description">
                         <h3 class="project__title">Travel Website.</h3>
@@ -167,8 +176,17 @@
 
                 <!-- PROJECT PORTFOLIO -->
                 <div class="works__project project">
-                    <img width="100%" height="auto" src="./assets/images/avif/portfolio.avif"
-                         alt="Image of travel project">
+                    <!--                    <img width="100%" height="auto" src="./assets/images/avif/portfolio.avif"-->
+                    <!--                         alt="Image of travel project">-->
+
+                    <picture>
+                        <source media="(max-width: 576px)"
+                                srcset="./assets/images/avif/portfolio_w356.avif" />
+                        <source media="(max-width: 768px)"
+                                srcset="./assets/images/avif/portfolio_w1000.avif" />
+                        <img class="project__image" src="./assets/images/avif/portfolio_w500.avif"
+                             alt="Image of portfolio project" />
+                    </picture>
 
                     <div class="project__description">
                         <h3 class="project__title">Portfolio Website.</h3>
@@ -184,14 +202,23 @@
 
                 <!-- PROJECT TRIP-GUIDE -->
                 <div class="works__project project">
-                    <img width="100%" height="auto" src="./assets/images/avif/trip-guide.avif"
-                         alt="Image of travel project">
+                    <!--                    <img width="100%" height="auto" src="./assets/images/avif/trip-guide.avif"-->
+                    <!--                         alt="Image of travel project">-->
+
+                    <picture>
+                        <source media="(max-width: 576px)"
+                                srcset="./assets/images/avif/trip-guide_w356.avif" />
+                        <source media="(max-width: 768px)"
+                                srcset="./assets/images/avif/trip-guide_w1000.avif" />
+                        <img class="project__image" src="./assets/images/avif/trip-guide_w500.avif"
+                             alt="Image of portfolio project" />
+                    </picture>
 
                     <div class="project__description">
                         <h3 class="project__title">Trip Guide Website.</h3>
 
+                        <p>Frontend:</p>
                         <ul class="project__technology-wrapper">
-                            Frontend:
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>SCSS</li>
@@ -202,8 +229,8 @@
                             <li>Docker</li>
                         </ul>
 
+                        <p>Backend:</p>
                         <ul class="project__technology-wrapper">
-                            Backend:
                             <li>JavaScript</li>
                             <li>Node</li>
                             <li>Express</li>
@@ -211,8 +238,8 @@
                             <li>Docker</li>
                         </ul>
 
+                        <p>Other technologies:</p>
                         <ul class="project__technology-wrapper">
-                            Other technologies:
                             <li>GraphCMS</li>
                             <li>CI/CD</li>
                         </ul>
@@ -223,8 +250,8 @@
         </div>
     </section>
 
-    <section id="skills" class="section container">
-        <h2 class="--line"># skills</h2>
+    <section id="career" class="section container">
+        <h2 class="--line"># career</h2>
 
     </section>
 
